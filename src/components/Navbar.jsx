@@ -1,6 +1,5 @@
-import {React} from 'react';
+import { React } from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/css/style.css';
 import "../assets/css/navbar.css"
 import { Navbar, Nav, Collapse, NavDropdown, Container } from 'react-bootstrap';
 
@@ -15,7 +14,10 @@ function Header() {
                         </Link>
                     </Navbar.Brand>
                     <div className='d-flex align-items-center nav-main-menu'>
-                        <Navbar.Toggle aria-controls="navbar-nav" />
+                        <Navbar.Toggle aria-controls="navbar-nav">
+                            <i class="fa-solid fa-bars open"></i>
+                            <i class="fa-solid fa-xmark close"></i>
+                        </Navbar.Toggle>
                         <Navbar.Collapse id="navbar-nav">
                             <Nav className="w-100 justify-content-center">
                                 <Link to="/about" className='nav-link'>About</Link>

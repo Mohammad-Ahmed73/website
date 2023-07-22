@@ -1,0 +1,23 @@
+import React from 'react';
+import { Container, Row, Col, Figure, Image } from 'react-bootstrap';
+
+function JoinUs() {
+  return (
+    <section className='joinus-section'>
+            <Container fluid="lg">
+                <Row className='align-items-center'>
+                    <Col md={6} className='mb-4 mb-md-0 mb-md-0 mb-4'>
+                        <h2 className='head-h2 gradient-color fw-bold'>Join us for Exclusive Deals, Engaging Discussions, and Expert Guidance. Start Connecting Today</h2>
+                    </Col>
+                    <Col md={6}>
+                        <Figure className='mb-0 image'>
+                            <Image src="" />
+                        </Figure>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+  )
+}
+
+export default JoinUs

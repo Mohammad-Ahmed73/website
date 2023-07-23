@@ -166,6 +166,161 @@
 }   
 
 
+/* Search Form Styling */
+.product-search-form .input-field-wrap {}
+
+.product-search-form .input-field-wrap .field-label {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #909090;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-search-form .input-field-wrap .field-wrap {
+    
+}
+
+.product-search-form .input-field-wrap .select-field {
+    width: 100%;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+    color: #FFA100;
+    padding: 10px 0 5px;
+    border: 0;
+    background: none;
+    outline: 0;
+}
+
+.product-search-form {
+    background: #FFF;
+    border-radius: 100px;
+    padding: 40px;
+    box-shadow: 0px 24px 50px 0px rgb(0 0 0 / 5%);
+}
+
+.product-search-form .submit-field {
+    width: 100%;
+    background-color: rgb(255 54 54 / 80%);
+    border: 0;
+    color: #FFF;
+    padding: 21px 15px;
+    font-size: 18px;
+    line-height: 100%;
+    border-radius: 100px;
+}
+
+.product-search-form .column:first-child {
+    border-right: 1px solid #909090;
+}
+
+/* Compare With Secting Section */
+.compare-with-section {
+    padding: 100px 0;
+}
+
+.compare-with-form .field-wrap .input-field {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(0 0 0 / 50%);
+    background-color: #D9D9D9;
+    border: 0;
+    border-radius: 18px;
+    padding: 10px 15px;
+    margin-bottom: 16px;
+}
+
+.compare-with-form .field-wrap .submit-field {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 8px 15px;
+    background: rgb(255 54 54 / 80%);
+    color: #FFF;
+    border: 0;
+    border-radius: 18px;
+}
+
+.compare-with-product .product-image {
+    position: relative;
+    padding-bottom: 100%;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 30px;
+}
+
+.compare-with-product .product-image img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.compare-with-product .head-h4 {
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    color: #1D1D1F;
+}
+
+.compare-with-product .column {
+    border-right: 1px solid #D6D6D6;
+    padding: 0;
+}
+
+.compare-with-product .column:last-child {
+    border-right: 0px;
+}
+
+.compare-with-product {
+    padding: 0px 20px;
+}
+
+.compare-with-product .compare-with-list {
+    margin: 0;
+}
+
+.compare-with-product .compare-with-list .list-item {
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    text-align: center;
+    padding: 40px 15px;
+    background-color: #FF3636;
+}
+
+.compare-with-product .compare-with-list .list-item:nth-child(odd) {
+    background-color: #FF3636;
+}
+
+.compare-with-product .compare-with-list .list-item:nth-child(even) {
+    background-color: #FFF;
+}
+
+.compare-with-product .compare-with-list .list-item i {
+    margin-right: 24px;
+}
+
+.compare-with-product .compare-with-list .list-item i.wrong {
+    color: #A5B1BF;
+}
+
+.compare-with-product .compare-with-list .list-item i.check {
+    color: #1EB649;
+}
+
+.background-text {
+    font-size: 16vw;
+    color: rgb(99 99 99 / 10%);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+
 /* Laptop Media Query */
 @media (max-width: 1200px) {
     .listing-section .point-listing {
@@ -184,6 +339,11 @@
 
     .deal-slider .slick-center .deal-wrapper {
         transform: scale(1.1);
+    }
+
+    .compare-with-product .compare-with-list .list-item {
+        font-size: 36px;
+        line-height: 46px;
     }
 }
 
@@ -206,12 +366,31 @@
     .deal-slider .slick-center .deal-wrapper {
         transform: scale(1);
     }
+
+    .product-search-form .column:first-child {
+        border-right: 0;
+        border-bottom: 1px solid #909090;
+        padding-bottom: 20px;
+    }
+
+    .product-search-form .submit-field {
+        padding: 16px 15px;
+    }
+
+    .compare-with-product .column {
+        border-right: 0px;
+    }
+
+    .compare-with-product .compare-with-list .list-item {
+        font-size: 32px;
+        line-height: 42px;
+    }
 }
 
 /* Mobile Media Query */
 @media (max-width: 767px) {
     .listing-section .point-listing {
-        font-size: 10px;
+        font-size: 20px;
         line-height: 28px;
     }
 
@@ -224,6 +403,20 @@
     .deal-slider .deal-wrapper .inner-content .discount-price {
         font-size: 30px;
         line-height: 36px;
+    }
+
+    .product-search-form {
+        border-radius: 30px;
+        padding: 30px 15px;
+    }
+
+    .product-search-form .submit-field {
+        font-size: 16px;
+    }
+
+    .compare-with-product .compare-with-list .list-item {
+        font-size: 28px;
+        line-height: 38px;
     }
 }
 

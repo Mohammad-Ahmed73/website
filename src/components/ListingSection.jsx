@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Figure, Image } from 'react-bootstrap';
 import BgImage from '../assets/images/left-square-bg-image.png';
+import ListingImage from '../assets/images/listing-image.png';
 
 function ListingSection() {
     const BackgroundImage = {
@@ -44,7 +45,7 @@ function ListingSection() {
                     </Col>
                     <Col md={6}>
                         <Figure className='mb-0 image'>
-                            <Image src="" />
+                            <Image src={ListingImage} width="100%" />
                         </Figure>
                     </Col>
                 </Row>

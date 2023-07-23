@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Figure, Image } from 'react-bootstrap';
 
 function JoinUs() {
-  return (
-    <section className='joinus-section'>
+    return (
+        <section className='joinus-section position-relative'>
             <Container fluid="lg">
                 <Row className='align-items-center'>
                     <Col md={6} className='mb-4 mb-md-0 mb-md-0 mb-4'>
@@ -16,8 +16,11 @@ function JoinUs() {
                     </Col>
                 </Row>
             </Container>
+            <div className="background-text px-3 text-center">
+                SHOP NOW
+            </div>
         </section>
-  )
+    )
 }
 
 export default JoinUs
